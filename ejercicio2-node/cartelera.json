@@ -1,0 +1,20 @@
+{
+  "peliculas": {
+    "spiderman-nwh": {
+      "titulo": "Spider-Man: No Way Home",
+      "director": "Jon Watts",
+      "reparto": ["Tom Holland", "Zendaya"]
+    },
+    "matrix-resurrections": {
+      "titulo": "The Matrix Resurrections",
+      "director": "Lana Wachowski",
+      "reparto": ["Keanu Reeves", "Carrie-Anne Moss"]
+    }
+  },
+  "sesiones": [
+    { "idPelicula": "spiderman-nwh", "sala": 17, "horas": ["17:00", "20:15"] },
+    { "idPelicula": "spiderman-nwh", "sala": 20, "horas": ["18:00", "21:15"] },
+    { "idPelicula": "matrix-resurrections", "sala": 5,  "horas": ["19:15"] },
+    { "idPelicula": "matrix-resurrections", "sala": 22, "horas": ["22:30"] }
+  ]
+}
