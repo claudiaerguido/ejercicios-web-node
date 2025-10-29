@@ -1,0 +1,6 @@
+{
+  "url": "https://es.wikipedia.org/wiki/Web_scraping",
+  "fetchedAt": "2025-10-29T10:29:50.557Z",
+  "title": "Web scraping - Wikipedia, la enciclopedia libre",
+  "notes": "title extraído con regex (Wikipedia)"
+}
