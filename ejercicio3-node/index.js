@@ -1,13 +1,12 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
-const { URL } = require('url'); // por si tu Node no la tiene global
+const { URL } = require('url'); 
 
 const DICT_PATH = path.join(__dirname, 'diccionario.txt');
 const WORDS = fs.readFileSync(DICT_PATH, 'utf8').split(/\r?\n/).filter(Boolean);
 
 http.createServer((req, res) => {
-  // 👇 Forma sencilla: parsear la URL y leer ?x= con searchParams
   const url = new URL(req.url, 'http://' + req.headers.host);
   let x = parseInt(url.searchParams.get('x') || '4', 10); // por defecto "4"
   if (!Number.isFinite(x) || x < 1) x = 4;                // validación básica
